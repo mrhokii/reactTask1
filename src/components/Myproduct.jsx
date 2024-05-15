@@ -8,8 +8,6 @@
 //     )
 // }
 
-import { useState } from "react"
-
 // Myproduct.defaultProps= {
 //     Name: "red"
 // };
@@ -73,6 +71,7 @@ import { useState } from "react"
 // }
 
 
+import { useState } from "react"
 
 const Mysite = () =>{
 
@@ -86,7 +85,6 @@ const Mysite = () =>{
     
     function chengm(){
         if(num == 0){
-            alert("ff")
         }else{
             
         setnump(num-1)

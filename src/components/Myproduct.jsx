@@ -71,35 +71,34 @@
 // }
 
 
-import { useState } from "react"
+// import { useState } from "react"
 
-const Mysite = () =>{
+const Mysite = ({Plus , M , Reset , Num}) =>{
 
     // const [name , setName] = useState("ali")
-    const [num , setnump] = useState(0)
+    // const [num , setnump] = useState(0)
     // const [favColor , setColor] = useState("red")
 
-    function chengp(){
-            setnump(num+1)
-    }
+//     function chengp(){
+//             setnump(num+1)
+//     }
     
-    function chengm(){
-        if(num == 0){
-        }else{
+//     function chengm(){
+//         if(num > 0){
             
-        setnump(num-1)
-        }
-}
-    function reset(){
-            setnump(0)
+//         setnump(num-1)
+//         }
+// }
+//     function reset(){
+//             setnump(0)
         
-    }
+//     }
     return(
         <div>
-            <h1>{num}</h1>
-            <button onClick={chengp}>+</button>
-            <button onClick={chengm}>-</button>
-            <button onClick={reset}>reset</button>
+            <h1>{Num}</h1>
+            <button onClick={Plus}>+</button>
+            <button onClick={M}>-</button>
+            <button onClick={Reset}>reset</button>
         </div>
     )
 }
